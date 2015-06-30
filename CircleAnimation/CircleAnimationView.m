@@ -85,7 +85,7 @@ typedef CGFloat (^easeblock_t)(CGFloat t,CGFloat b,CGFloat c,CGFloat d,NSDiction
 
 - (void)drawRect:(CGRect)rect
 {
-    [StyleKit drawCircleWithFrame: rect circleColor:_circleColor != nil ? _circleColor : [UIColor colorWithRed: 0.98 green: 0.22 blue: 0.529 alpha: 1] endAngle:360.0 * _value interactiveFrame:rect brushWidth:29.0];
+    [StyleKit drawCircleWithFrame: rect circleColor:_circleColor != nil ? _circleColor : [UIColor colorWithRed: 0.98 green: 0.22 blue: 0.529 alpha: 1] endAngle:360.0 * _value interactiveFrame:rect brushWidth:_strokeWidth != 0.0 ? _strokeWidth : 29.0];
 }
 
 @end

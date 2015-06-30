@@ -12,6 +12,7 @@
 
 @property (strong,nonatomic) UIColor *circleColor;
 @property (assign,nonatomic) CGFloat value;
+@property (assign,nonatomic) CGFloat strokeWidth;
 - (void) setValue:(CGFloat)value animated:(BOOL)animated;
 
 @end
